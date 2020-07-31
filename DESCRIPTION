@@ -1,8 +1,8 @@
 Package: liondown
 Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.2
+Version: 0.1.0
 Authors@R: c(
-    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("cre", "aut")),
     person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
     person("Jared", "Sampson", email = "jared.sampson@columbia.edu", role="aut"))
 Description: Using the bookdown package and LaTeX and Word thesis templates
@@ -11,14 +11,18 @@ Description: Using the bookdown package and LaTeX and Word thesis templates
     the R code to produce plots and analyses as well.
 Maintainer: Jared Sampson <jared.sampson@columbia.edu>
 Depends:
-    R (>= 3.2.0),
-    devtools,
+    R (>= 3.2.0)
+Imports:
     dplyr,
     ggplot2,
     bookdown,
-    knitr
-License: MIT
+    knitr,
+    here
+Suggests:
+    remotes,
+    usethis
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
-RoxygenNote: 6.0.1
+SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
+RoxygenNote: 7.1.0
